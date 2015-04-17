@@ -1,0 +1,22 @@
+Rails.application.routes.draw do
+  get("/arrays/1", { :controller => "arrays", :action => "num_1"} )
+  get("/arrays/2", { :controller => "arrays", :action => "num_2"} )
+  get("/arrays/3", { :controller => "arrays", :action => "num_3"} )
+  get("/arrays/4", { :controller => "arrays", :action => "num_4"} )
+  get("/arrays/5", { :controller => "arrays", :action => "num_5"} )
+  get("/arrays/6", { :controller => "arrays", :action => "num_6"} )
+  get("/arrays/7", { :controller => "arrays", :action => "num_7"} )
+  get("/arrays/8", { :controller => "arrays", :action => "num_8"} )
+  get("/arrays/9", { :controller => "arrays", :action => "num_9"} )
+  get("/arrays/10", { :controller => "arrays", :action => "num_10"} )
+  get("/arrays/11", { :controller => "arrays", :action => "num_11"} )
+  get("/arrays/12", { :controller => "arrays", :action => "num_12"} )
+  get("/arrays/13", { :controller => "arrays", :action => "num_13"} )
+  get("/arrays/14", { :controller => "arrays", :action => "num_14"} )
+
+  get("/loops/1", { :controller => "loops", :action => "num_1"} )
+  get("/loops/2", { :controller => "loops", :action => "num_2"} )
+  get("/loops/3", { :controller => "loops", :action => "num_3"} )
+  get("/loops/4", { :controller => "loops", :action => "num_4"} )
+  get("/loops/5", { :controller => "loops", :action => "num_5"} )
+end
