@@ -2,8 +2,8 @@ class LoopsController < ApplicationController
 
   def num_1
     #=== Example ================================
-    # Sometimes you need to run the same chunk of code
-    # on every item in an array.
+    # Sometimes you need to run the same chunk
+    # of code over and over again.
     # Loops are a perfect solution for this problem.
     #============================================
     @phrase = "Are we there yet?"
@@ -13,6 +13,7 @@ class LoopsController < ApplicationController
   def num_2
     #=== Example ================================
     # We can combine these loops with HTML to
+    # create formatted lists in a web page
     #============================================
     @phrase = "Are we there yet?"
     render 'num_2'
