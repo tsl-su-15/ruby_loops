@@ -1,0 +1,12 @@
+<ul class="list-group">
+<% (@end_year - @start_year + 1).times do |count| %>
+  <% year = count + @start_year %>
+  <% if year%4 == 0 %>
+    <% if year%100 != 0 || year%400 == 0 %>
+      <li class="list-group-item"><%= year %></li>
+
+    <% end %>
+
+  <% end %>
+<% end %>
+</ul>

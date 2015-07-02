@@ -1,0 +1,48 @@
+<div class="list-group">
+  <% 99.times do |var| %>
+    <% if var < 98 %>
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">
+          <%= 99 - var %> bottles of beer on the wall
+        </h4>
+        <h4 class="list-group-item-heading">
+          <%= 99 - var %> bottles of beer
+        </h4>
+        <h4>Take one down, pass it around</h4>
+        <h4 class="list-group-item-heading">
+          <%= 98 - var %>
+
+          <% if (98 - var) == 1 %>
+            bottle
+          <% else %>
+            bottles
+          <% end %>
+
+          of beer on the wall
+        </h4>
+      </a>
+    <% else %>
+       <a href="#" class="list-group-item">
+         <h4 class="list-group-item-heading">
+           <%= 99 - var %> bottle of beer on the wall
+         </h4>
+         <h4 class="list-group-item-heading">
+           <%= 99 - var %> bottle of beer
+         </h4>
+         <h4>Take one down, pass it around</h4>
+         <h4 class="list-group-item-heading">
+           No more bottles of beer on the wall
+         </h4>
+
+       </a>
+    <% end %>
+  <% end %>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">
+      No more bottles of beer on the wall
+    </h4>
+    <h4 class="list-group-item-heading">
+      No more bottles of beer
+    </h4>
+  </a>
+</div>

@@ -1,0 +1,18 @@
+<div class="container">
+  <% @users.each do |user| %>
+    <div class="row">
+      <div class="media">
+        <div class="media-left">
+          <a href="#">
+            <img class="media-object" src="<%= user['image_url'] %>" alt="...">
+          </a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading"><%= user['name'] %></h4>
+          <p>email: <%= user['email'] %></p>
+          <p>phone: <%= user['phone'] %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -146,6 +146,12 @@ class LoopsController < ApplicationController
     # 2000, which were in fact leap years).
     #============================================
 
+    # non-form solution
+
+    @start_year = 1200
+    @end_year = 1900
+
+
     render 'num_10'
   end
 
